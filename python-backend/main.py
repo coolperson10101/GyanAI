@@ -48,9 +48,7 @@ df_agent = create_pandas_dataframe_agent(
                         8 - Exceeds Expectations
                         9 - Excellent
                         10 - Outstanding
-                    Check similar columns for information in the case that users misremember column names. 
-                    Practice and Class are similar columns, so if the user asks for information from one, you should also check the other for it.
-                    Do the same for the columns Employee Title and Employee Band. 
+                    ALWAYS check both class and practice columns when searching the other. 
                     Similarly, users might forget exact distinctions in the dataframe, so you can ask them to clarify ambiguous terms. 
                     Always AVOID placeholder text in your responses, include all relevant information from the dataframe always. """}
 )
