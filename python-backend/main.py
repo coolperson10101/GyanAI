@@ -21,7 +21,7 @@ llm = AzureChatOpenAI(
     azure_deployment="gpt-4.1",
     azure_endpoint="https://agenticaiazurefoundry.openai.azure.com/",
     api_key="8xoeqAg8DsDsmLHqrsEvgPfqpyRBMURNK2JCQCjVbE95zu0FilIoJQQJ99BFACYeBjFXJ3w3AAAAACOGY1TV",
-    temperature = 0.7,
+    temperature = 0.2,
 )
 
 memory = ConversationBufferMemory(return_messages=True)
@@ -49,8 +49,7 @@ df_agent = create_pandas_dataframe_agent(
                         9 - Excellent
                         10 - Outstanding
                     As people may not know the exact names of the columns, they may ask for information from one column while meaning to refer to another, in cases like this, you should first refer to the specified column, then if it does not contain the information, you can look at other columns for it.
-                    """
-    }
+                    Always AVOID placeholder text in your responses
 )
 
 def smart_data_chat(query):
