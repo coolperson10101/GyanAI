@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Forward the request to the Python FastAPI backend
-    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://backend-production-21c2.up.railway.app";
     const response = await fetch(`${backendUrl}/analyze?prompt=${encodeURIComponent(message)}`, {
       method: "GET",
       headers: {
