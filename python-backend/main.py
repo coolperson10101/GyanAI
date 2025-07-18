@@ -48,7 +48,7 @@ df_agent = create_pandas_dataframe_agent(
                         8 - Exceeds Expectations
                         9 - Excellent
                         10 - Outstanding
-                    As people may not know the exact names of the columns, they may ask for information from one column while meaning to refer to another, in cases like this, you should first refer to the specified column, then if it does not contain the information, you can look at other columns for it.
+                    If there are no such entries in the dataframe, you should look for the data in other columns, then promopt the user, asking them which column they meant.
                     Always AVOID placeholder text in your responses, include all relevant information from the dataframe always. """}
 )
 
