@@ -9,7 +9,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Forward the request to the Python FastAPI backend
-    const response = await fetch(`http://localhost:8000/analyze?prompt=${encodeURIComponent(message)}`, {
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+    const response = await fetch(`${backendUrl}/analyze?prompt=${encodeURIComponent(message)}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
