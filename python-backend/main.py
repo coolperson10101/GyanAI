@@ -48,7 +48,10 @@ df_agent = create_pandas_dataframe_agent(
                         8 - Exceeds Expectations
                         9 - Excellent
                         10 - Outstanding
-                    If there are no such entries in the dataframe, you should look for the data in other columns, then promopt the user, asking them which column they meant.
+                    Check similar columns for information in the case that users misremember column names. 
+                    Practice and Class are similar columns, so if the user asks for information from one, you should also check the other for it.
+                    Do the same for the columns Employee Title and Employee Band. 
+                    Similarly, users might forget exact distinctions in the dataframe, so you can ask them to clarify ambiguous terms. 
                     Always AVOID placeholder text in your responses, include all relevant information from the dataframe always. """}
 )
 
