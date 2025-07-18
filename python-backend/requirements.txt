@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pandas
+langchain
+langchain-openai
+langchain-community
+langchain-experimental
+pydantic 
+tabulate
+matplotlib
+seaborn
+plotly
+pillow
