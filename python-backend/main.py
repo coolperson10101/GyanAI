@@ -48,9 +48,10 @@ df_agent = create_pandas_dataframe_agent(
                         8 - Exceeds Expectations
                         9 - Excellent
                         10 - Outstanding
-                    ALWAYS check both class and practice columns when searching the other. 
-                    Similarly, users might forget exact distinctions in the dataframe, so you can ask them to clarify ambiguous terms. 
-                    Always AVOID placeholder text in your responses, include all relevant information from the dataframe always. """}
+                    ALWAYS ask the user to clarify the question if it is not clear, especially if it is unclear which column to search in.
+                    Always AVOID placeholder text in your responses, include all relevant information from the dataframe always.
+                    Always show Titles and Practices unless explicity asked not to include them.
+                     """}
 )
 
 def smart_data_chat(query):
